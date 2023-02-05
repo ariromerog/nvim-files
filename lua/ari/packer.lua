@@ -18,6 +18,8 @@ return require('packer').startup(function(use)
     use 'theprimeagen/harpoon'
     use 'mbbill/undotree'
     use 'tpope/vim-fugitive'
+    use 'sbdchd/neoformat'
+    use 'm4xshen/autoclose.nvim'
 
     use {
         'nvim-tree/nvim-tree.lua',
@@ -33,7 +35,6 @@ return require('packer').startup(function(use)
             {'neovim/nvim-lspconfig'},
             {'williamboman/mason.nvim'},
             {'williamboman/mason-lspconfig.nvim'},
-
             -- Autocompletion
             {'hrsh7th/nvim-cmp'},
             {'hrsh7th/cmp-buffer'},
