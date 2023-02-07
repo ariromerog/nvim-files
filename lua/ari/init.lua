@@ -1,6 +1,8 @@
 require("ari.remap")
 require("ari.packer")
 require("ari.settings")
+require("ari.null-ls")
+require("ari.prettier")
 
 -- Color Scheme
 local colorscheme = "nordfox"
