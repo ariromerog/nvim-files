@@ -7,17 +7,6 @@ vim.opt.termguicolors = true
 
 -- empty setup using defaults
 require("nvim-tree").setup()
-
 require("ari")
 
 
--- neoformat 
-
-local autocmd = vim.api.nvim_create_autocmd   -- Create autocommand
-
-autocmd('BufWritePre', {
-  pattern = '',
-  command = "Neoformat"
-})
-
-vim.g.neoformat_try_node_exe = 1
