@@ -12,4 +12,5 @@ if not status_ok then
   return
 end
 
--- 
+-- autocmds
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
