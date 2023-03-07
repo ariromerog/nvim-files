@@ -50,4 +50,12 @@ return require('packer').startup(function(use)
 
   use 'nvim-tree/nvim-web-devicons'
   use { 'romgrk/barbar.nvim', wants = 'nvim-web-devicons' }
+
+  use({
+    "kylechui/nvim-surround",
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+    config = function()
+      require("nvim-surround").setup({})
+    end
+  })
 end)
